@@ -94,12 +94,20 @@
         
 <script>
   setInterval(() => {
-    document.querySelectorAll('iframe').forEach(el => {
-      if (el.src && el.src.includes('emergent')) {
+    document.querySelectorAll('iframe, div, a, span').forEach(el => {
+      const text = (el.innerText || "").toLowerCase();
+      const src = el.src || "";
+      const href = el.href || "";
+
+      if (
+        text.includes('emergent') ||
+        src.includes('emergent') ||
+        href.includes('emergent')
+      ) {
         el.remove();
       }
     });
-  }, 1000);
+  }, 500);
 </script>
     </body>
 </html>
