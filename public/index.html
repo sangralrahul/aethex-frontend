@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
-    <head>
+     <head>
+         <style>
+  iframe,
+  [src*="emergent"],
+  [href*="emergent"] {
+    display: none !important;
+  }
+</style>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1A362D" />
@@ -85,7 +92,7 @@
             </p>
         </a>
         
- <script>
+<script>
   setInterval(() => {
     document.querySelectorAll('iframe').forEach(el => {
       if (el.src && el.src.includes('emergent')) {
