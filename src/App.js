@@ -35,7 +35,7 @@ function App() {
               <Route path="/register" element={<RegisterPage />} />
             </Routes>
             <Footer />
-            <ChatBot />
+            
           </div>
         </BrowserRouter>
         <Toaster position="top-right" toastOptions={{ style: { background: '#141025', border: '1px solid #2A2540', color: '#E2E8F0' } }} />
