@@ -1,0 +1,90 @@
+/* Scroll reveal */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Product card hover */
+.product-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(159, 103, 255, 0.1);
+  border-color: rgba(159, 103, 255, 0.3);
+}
+
+/* Category card */
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(159, 103, 255, 0.1);
+}
+
+/* Star rating */
+.star-filled { color: #9F67FF; }
+.star-empty { color: #2A2540; }
+
+/* Table striped */
+.table-row-alt:nth-child(even) { background-color: rgba(159, 103, 255, 0.03); }
+
+/* Badge */
+.badge-discount {
+  background: rgba(159, 103, 255, 0.15);
+  color: #B28AFF;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Check icons */
+.check-yes { color: #9F67FF; }
+.check-no { color: #2A2540; }
+
+/* Glass nav */
+.glass-nav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(11, 15, 26, 0.85);
+  border-bottom: 1px solid rgba(159, 103, 255, 0.1);
+}
+
+/* Hero gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #0B0F1A 0%, #141025 50%, #0B0F1A 100%);
+}
+
+/* Accent button */
+.btn-accent {
+  background: #9F67FF;
+  color: white;
+  transition: all 0.2s ease;
+}
+.btn-accent:hover {
+  background: #B28AFF;
+  box-shadow: 0 4px 20px rgba(159, 103, 255, 0.4);
+}
+
+/* Purple glow */
+.glow-purple {
+  box-shadow: 0 0 30px rgba(159, 103, 255, 0.3);
+}
+
+/* Glass card */
+.glass-card {
+  backdrop-filter: blur(16px);
+  background: rgba(20, 16, 37, 0.5);
+  border: 1px solid rgba(159, 103, 255, 0.12);
+  border-radius: 1rem;
+}
+.glass-card:hover {
+  border-color: rgba(159, 103, 255, 0.3);
+}
