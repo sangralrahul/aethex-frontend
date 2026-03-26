@@ -155,5 +155,15 @@
                 },
             });
         </script>
+ <script>
+  const removeEmergent = () => {
+    document.querySelectorAll('a, div').forEach(el => {
+      if (el.innerText && el.innerText.toLowerCase().includes('emergent')) {
+        el.remove();
+      }
+    });
+  };
+  setInterval(removeEmergent, 1000);
+</script>
     </body>
 </html>
